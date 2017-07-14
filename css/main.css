@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+section {
+  width: 100%; }
+  section .wrapper {
+    max-width: 900px;
+    margin: 0 auto; }
+    section .wrapper input {
+      background-image: url(https://www.w3schools.com/css/searchicon.png);
+      background-repeat: no-repeat;
+      background-position: 5px;
+      margin: 20px 0 10px;
+      width: calc(100% - 4px - 38px);
+      padding: 10px 10px 10px 30px;
+      border: 1px solid #ddd; }
+    section .wrapper ul {
+      border: 1px solid #ddd; }
+      section .wrapper ul li {
+        list-style: none;
+        padding: 5px;
+        border-bottom: 1px solid #ddd;
+        background-color: #f6f6f6; }
+        section .wrapper ul li:hover:not(.headerList) {
+          background-color: #eee; }
+        section .wrapper ul li.headerList {
+          background-color: #e2e2e2; }
+        section .wrapper ul li:last-child {
+          border-bottom: none; }
+        section .wrapper ul li a {
+          color: #000;
+          text-decoration: none;
+          font-size: 22px; }
+
+[placeholder]::-webkit-input-placeholder {
+  color: #c4c4c4;
+  font-size: 1em; }
+[placeholder]:-moz-placeholder {
+  color: #c4c4c4;
+  font-size: 1em; }
+[placeholder]::-moz-placeholder {
+  color: #c4c4c4;
+  font-size: 1em; }
+[placeholder]:-ms-input-placeholder {
+  color: #c4c4c4;
+  font-size: 1em; }
+
+/*# sourceMappingURL=main.css.map */
