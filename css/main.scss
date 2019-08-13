@@ -1,76 +1,114 @@
-* {
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// section {
+//   width: 100%;
+//   .wrapper {
+//     max-width: 900px;
+//     margin: 0 auto;
+//     input {
+//       background-image: url(https://www.w3schools.com/css/searchicon.png);
+//       background-repeat: no-repeat;
+//       background-position: 5px;
+//       margin: 20px 0 10px;
+//       width: calc(100% - 4px - 38px);
+//       padding: 10px 10px 10px 30px;
+//       border: 1px solid #ddd;
+//     }
+//     ul {
+//       border: 1px solid #ddd;
+//       li {
+//         list-style: none;
+//         padding: 5px;
+//         border-bottom: 1px solid #ddd;
+//         background-color: #f6f6f6;
+//         &:hover:not(.headerList) {
+//           background-color: #eee;
+//         }
+//         &.headerList {
+//           background-color: #e2e2e2;
+//         }
+//         &:last-child {
+//           border-bottom: none;
+//         }
+//         a {
+//           color: #000;
+//           text-decoration: none;
+//           font-size: 22px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // Create placeholder mixin (dlya 1go placeholdera xd);
+// @mixin placeholder($color, $size:"") {
+//   &::-webkit-input-placeholder {
+//     color: $color;
+//     @if $size != "" {
+//       font-size: $size;
+//     }
+//   }
+//   &:-moz-placeholder {
+//     color: $color;
+//     @if $size != "" {
+//       font-size: $size;
+//     }
+//   }
+//   &::-moz-placeholder {
+//     color: $color;
+//     @if $size != "" {
+//       font-size: $size;
+//     }
+//   }
+//   &:-ms-input-placeholder {
+//     color: $color;
+//     @if $size != "" {
+//       font-size: $size;
+//     }
+//   }
+// }
+
+// [placeholder] {
+//   @include placeholder (#c4c4c4, 1em);
+// }
+
+ul {
   margin: 0;
   padding: 0;
 }
 
-section {
-  width: 100%;
-  .wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    input {
-      background-image: url(https://www.w3schools.com/css/searchicon.png);
-      background-repeat: no-repeat;
-      background-position: 5px;
-      margin: 20px 0 10px;
-      width: calc(100% - 4px - 38px);
-      padding: 10px 10px 10px 30px;
-      border: 1px solid #ddd;
-    }
-    ul {
-      border: 1px solid #ddd;
-      li {
-        list-style: none;
-        padding: 5px;
-        border-bottom: 1px solid #ddd;
-        background-color: #f6f6f6;
-        &:hover:not(.headerList) {
-          background-color: #eee;
-        }
-        &.headerList {
-          background-color: #e2e2e2;
-        }
-        &:last-child {
-          border-bottom: none;
-        }
-        a {
-          color: #000;
-          text-decoration: none;
-          font-size: 22px;
-        }
-      }
-    }
+li {
+  list-style-type: none;
+}
+
+.filter-list {
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    background: url('../img/magnifying-glass.svg') 5px no-repeat;
+    background-size: 24px;
+    padding: 10px;
+    padding-left: 35px;
+    
+  }
+  &__firstLetter {
+    background-color: #e2e2e2;
+    padding: 10px;
+  }
+  &__item {
+    padding: 10px;
   }
 }
 
-// Create placeholder mixin (dlya 1go placeholdera xd);
-@mixin placeholder($color, $size:"") {
-  &::-webkit-input-placeholder {
-    color: $color;
-    @if $size != "" {
-      font-size: $size;
-    }
-  }
-  &:-moz-placeholder {
-    color: $color;
-    @if $size != "" {
-      font-size: $size;
-    }
-  }
-  &::-moz-placeholder {
-    color: $color;
-    @if $size != "" {
-      font-size: $size;
-    }
-  }
-  &:-ms-input-placeholder {
-    color: $color;
-    @if $size != "" {
-      font-size: $size;
-    }
-  }
+.visible {
+  display: block;
 }
 
-[placeholder] {
-  @include placeholder (#c4c4c4, 1em);
+.invisible {
+  display: none;
 }
